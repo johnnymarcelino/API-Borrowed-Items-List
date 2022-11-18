@@ -12,5 +12,6 @@ namespace API_Borrowed_Items_List.Data
         }
 
         public DbSet<Item> Items { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
     }
 }
