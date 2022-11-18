@@ -5,6 +5,7 @@ namespace API_Borrowed_Items_List.Data
 {
     public class ApplicationDbContext : DbContext
     {
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
