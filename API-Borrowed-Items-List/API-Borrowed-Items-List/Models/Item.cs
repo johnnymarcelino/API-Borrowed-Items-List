@@ -7,5 +7,7 @@ namespace API_Borrowed_Items_List.Models
         [Key]  // primary key
         public int Id { get; set; }  // id of the item
         public string Borrower { get; set; }
+        public string Lender { get; set; }
+        public string ItemName { get; set; }
     }
 }
