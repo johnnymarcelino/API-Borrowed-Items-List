@@ -1,4 +1,4 @@
-﻿@model API_Borrowed_Items_List.Models.Item
+﻿@model API_Borrowed_Items_List.Models.Expense
 
 <form method="post" asp-action="Update">
     <input asp-for="Id" hidden />
@@ -10,27 +10,20 @@
             <div class="col-12">
                 <div class="form-group row">
                     <div class="col-4">
-                        <label asp-for="ItemName"></label>
+                        <label asp-for="ExpenseName"></label>
                     </div>
                     <div class="col-4">
-                        <label asp-for="Borrower"></label>
-                    </div>
-                    <div class="col-4">
-                        <label asp-for="Lender"></label>
+                        <label asp-for="Amount"></label>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-4">
-                        <input asp-for="ItemName" class="form-control" />
-                        <span asp-validation-for="ItemName" class="text-danger"></span>
+                        <input asp-for="ExpenseName" class="form-control" />
+                        <span asp-validation-for="ExpenseName" class="text-danger"></span>
                     </div>
                     <div class="col-4">
-                        <input asp-for="Borrower" class="form-control" />
-                        <span asp-validation-for="Borrower" class="text-danger"></span>
-                    </div>
-                    <div class="col-4">
-                        <input asp-for="Lender" class="form-control" />
-                        <span asp-validation-for="Lender" class="text-danger"></span>
+                        <input asp-for="Amount" class="form-control" />
+                        <span asp-validation-for="Amount" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="form-group row">

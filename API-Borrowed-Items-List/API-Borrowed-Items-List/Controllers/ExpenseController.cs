@@ -40,7 +40,8 @@ namespace API_Borrowed_Items_List.Controllers
             return View(obj);
         }
 
-        // GET Delete
+        //GET Delete
+       //[HttpDelete]
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -56,7 +57,7 @@ namespace API_Borrowed_Items_List.Controllers
         }
 
         // POST Delete
-        [HttpDelete]
+        //[HttpDelete]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
